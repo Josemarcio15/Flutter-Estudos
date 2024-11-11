@@ -18,10 +18,14 @@ class HomeBotoes extends StatelessWidget {
           children: [
             ElevatedButton(
               onPressed: () {
-                // Navigator.of(context).push(MaterialPageRoute(
-                //   builder: (context) => ProdutosPage(),
-                // ));
-                Navigator.of(context).pushAndRemoveUntil(newRoute, predicate)
+                Navigator.of(context).push(MaterialPageRoute(
+                  builder: (context) => ProdutosPage(),
+                ));
+                Navigator.of(context).pushAndRemoveUntil(
+                    MaterialPageRoute(
+                      builder: (context) => ProdutosPage(),
+                    ),
+                    (route) => false);
               },
               child: Text('Produtos'),
             ),
