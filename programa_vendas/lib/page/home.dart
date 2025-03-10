@@ -9,7 +9,7 @@ class Home extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.green,
-        title: Text('Controle de estoque'),
+        title: Text('Controle de estoque 1.0 '),
       ),
       body: Row(children: [Sidebar()]),
     );
