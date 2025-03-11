@@ -10,7 +10,7 @@ class HomeBotoes extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.blue,
       ),
-      body: Container(
+      body: SizedBox(
         width: double.infinity,
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
